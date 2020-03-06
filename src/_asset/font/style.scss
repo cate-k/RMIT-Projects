@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'rmit';
+  src:
+    url('asset/font/rmit.ttf?163ljw') format('truetype'),
+    url('asset/font/rmit.woff?163ljw') format('woff'),
+    url('asset/font/rmit.svg?163ljw#rmit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="rmit-"], [class*=" rmit-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rmit' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rmit-menu:before {
+  content: "\e901";
+}
+.rmit-x:before {
+  content: "\e902";
+}

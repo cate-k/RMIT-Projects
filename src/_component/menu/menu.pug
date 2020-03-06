@@ -1,2 +1,17 @@
-.nav
-    
+input.menu__hidden(
+    type="checkbox",
+    id="toggle-menu"
+)
+
+.menu__wrapper
+    ul.menu__list
+        each menu in data.menu
+            li.menu__item
+                a.menu__link(
+                    href=`${menu.link}`,
+                    title=menu.title
+                )=menu.label
+
+label(
+    for="toggle-menu"
+).rmit-menu
