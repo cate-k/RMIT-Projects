@@ -10,9 +10,6 @@ body {
 h3 {
   font-size: 1rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 // Responsiveness
@@ -62,31 +59,31 @@ h3 {
 
 .menu__link {
   color: $colour-aquamarine;
-  font-family: "Josefin Sans";
-  font-size: 1rem;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
   margin: 1rem;
+
+  &:hover {
+    color: $colour-keppel;
+  }
 }
 
 // Front page image
 .bg-image {
-  background-image: url(asset/image/mountains.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url(asset/image/mountains.jpg);
   background-size: cover;
+  background-position: center;
   height: 100%;
   width: 100%;
 
   h3 {
     font-family: "Pacifico";
-    // position: absolute;
-    top: 50%;
-    left: 50%;
     margin-bottom: 0.5rem;
-    // transform: translate(-45%, -50%);
+    padding-top: 20%;
   }
 
   p {
     font-size: 0.4rem;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
   }
 }
