@@ -1,0 +1,92 @@
+// General
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat";
+  background-color: $colour-woodsmoke;
+  color: white;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Responsiveness
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+
+// Menu
+.menu__wrapper {
+  background-color: $colour-woodsmoke;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+  right: -100%;
+  border-left: 0.17rem solid $colour-ebony-clay;
+}
+
+.menu__hidden {
+  display: none;
+}
+
+.rmit-menu {
+  font-size: 2rem;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+#toggle-menu:checked {
+  & + .menu__wrapper {
+    right: 0%;
+    width: 10rem;
+  }
+
+  & ~ label[for="toggle-menu"]:before {
+    content: "\e902";
+  }
+}
+
+.menu__list {
+  margin-top: 2rem;
+}
+
+.menu__link {
+  color: $colour-aquamarine;
+  font-family: "Josefin Sans";
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+// Front page image
+.bg-image {
+  background-image: url(asset/image/mountains.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  h3 {
+    font-family: "Pacifico";
+    // position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 0.5rem;
+    // transform: translate(-45%, -50%);
+  }
+
+  p {
+    font-size: 0.4rem;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  }
+}
