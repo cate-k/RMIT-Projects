@@ -15,10 +15,11 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  margin: auto;
+  width: 75%;
 }
 
 a {
@@ -32,10 +33,27 @@ a {
 .heading {
   font-family: "Special Elite";
   font-size: 2rem;
+  text-align: center;
 }
 
-.paragraph {
-  font-size: 1.2rem;
+.sub-heading {
+  text-align: left;
+  font-family: "Special Elite";
+  font-size: 1.5rem;
+  margin: auto;
+  width: 75%;
+}
+
+.centered-paragraph {
+  text-align: center;
+}
+
+.list {
+  list-style-type: disc;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  margin-left: 18%;
+  width: 70%;
 }
 
 // Responsiveness
@@ -153,5 +171,22 @@ a {
   background-size: cover;
   height: 5rem;
   width: 15rem;
+  margin: auto;
+}
+
+// Assignment 2 - IIT
+.skill-table {
+  background-image: url(asset/image/skills-table.png);
+  background-size: cover;
+  height: 608px;
+  width: 756px;
+  margin: auto;
+}
+
+.unrequired-skills {
+  background-image: url(asset/image/unrequired-skills.png);
+  background-size: cover;
+  height: 121px;
+  width: 757px;
   margin: auto;
 }

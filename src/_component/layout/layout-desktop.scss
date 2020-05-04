@@ -1,11 +1,29 @@
 @media (min-width: 1280px) {
   // General
+  p {
+    font-size: 0.5rem;
+    line-height: 1.2rem;
+    width: 60%;
+  }
+
   .heading {
     font-size: 1rem;
   }
 
-  .paragraph {
+  .sub-heading {
+    font-size: 0.8rem;
+    width: 60%;
+  }
+
+  .centered-paragraph {
     font-size: 0.5rem;
+  }
+
+  .list {
+    font-size: 0.5rem;
+    line-height: 1.2rem;
+    width: 60%;
+    margin-left: 25%;
   }
 
   // Menu
