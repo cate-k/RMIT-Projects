@@ -1,11 +1,11 @@
 [
   {
-    "link": "https://cate-k.github.io/RMIT-Projects/introduction-to-it",
+    "link": "/introduction-to-it",
     "title": "Introduction to IT",
     "label": "Introduction to IT"
   },
   {
-    "link": "https://cate-k.github.io/RMIT-Projects/web-programming",
+    "link": "/web-programming",
     "title": "Web Programming",
     "label": "Web Programming"
   }
