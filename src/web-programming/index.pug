@@ -1,0 +1,59 @@
+extends ../_component/layout/layout
+
+block content
+    .logo
+
+    nav#navbar
+        a(href="#about-us") About Us
+        a(href="#prices") Prices
+        a(href="#now-showing") Now Showing
+
+    .slideshow-container
+        .fade
+            .slide-number 1 / 3
+                .slide-1
+                p.text We have renovated!
+
+        .fade
+            .slide-number 2 / 3
+                .slide-2
+                p.text In cinemas August 9
+
+        .fade
+            .slide-number 3 / 3
+                .slide-3
+                p.text In cinemas November 22
+
+    .circles
+        span.dot(onClick="currentSlide(1)")
+        span.dot(onClick="currentSlide(2)")
+        span.dot(onClick="currentSlide(3)")
+
+    #about-us
+        p.wp-heading About Us
+        p Our cinema has re-opened after modern renovations and improvements, so you can watch the latest movies with a whole new experience!
+        p We are dedicated to continuously creating new ways to make the cinema experience more meaningful and captivating. To better achieve this, we've recently upgraded our cinema with 3D Dolby Vision projection and Dolby Atmos sound.
+        p New standard and first class seats are now available as well.
+
+        .picture-wrapper
+            .seat-column
+                .seat
+                    .seat-one
+                    p Standard Seats
+
+                .seat
+                    .seat-two
+                    p First Class Seats
+
+    #prices
+        .parallax
+            p.wp-heading Prices
+
+            .card-wrapper
+                .card-group-one
+                    .card
+                        p.card-heading Standard Adult (STA)
+                        hr
+                        p Monday & Tuesday - All Day: $15.00
+
+                .card-group-two
