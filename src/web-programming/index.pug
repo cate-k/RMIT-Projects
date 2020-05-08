@@ -1,59 +1,220 @@
 extends ../_component/layout/layout
 
 block content
-    .logo
+    .black-background
+        img(class="logo", src="../../asset/image/Lunardo-Cinema-Logo.png", alt="Lunardo Cinema logo")
 
-    nav#navbar
-        a(href="#about-us") About Us
-        a(href="#prices") Prices
-        a(href="#now-showing") Now Showing
+        nav
+            #navbar
+                a(href="#about-us") About Us
+                a(href="#prices") Prices
+                a(href="#now-showing") Now Showing
 
-    .slideshow-container
-        .fade
-            .slide-number 1 / 3
-                .slide-1
-                p.text We have renovated!
+        .slideshow-container
+            .fade
+                .slide-number 1 / 3
+                    .slide-1
+                    p.text We have renovated!
 
-        .fade
-            .slide-number 2 / 3
-                .slide-2
-                p.text In cinemas August 9
+            .fade
+                .slide-number 2 / 3
+                    .slide-2
+                    p.text In cinemas August 9
 
-        .fade
-            .slide-number 3 / 3
-                .slide-3
-                p.text In cinemas November 22
+            .fade
+                .slide-number 3 / 3
+                    .slide-3
+                    p.text In cinemas November 22
 
-    .circles
-        span.dot(onClick="currentSlide(1)")
-        span.dot(onClick="currentSlide(2)")
-        span.dot(onClick="currentSlide(3)")
+        .circles
+            span.dot(onClick="currentSlide(1)")
+            span.dot(onClick="currentSlide(2)")
+            span.dot(onClick="currentSlide(3)")
 
-    #about-us
-        p.wp-heading About Us
-        p Our cinema has re-opened after modern renovations and improvements, so you can watch the latest movies with a whole new experience!
-        p We are dedicated to continuously creating new ways to make the cinema experience more meaningful and captivating. To better achieve this, we've recently upgraded our cinema with 3D Dolby Vision projection and Dolby Atmos sound.
-        p New standard and first class seats are now available as well.
+        main
+            article#about-us
+                p.wp-heading About Us
+                p Our cinema has re-opened after modern renovations and improvements, so you can watch the latest movies with a whole new experience!
+                p We are dedicated to continuously creating new ways to make the cinema experience more meaningful and captivating. To better achieve this, we've recently upgraded our cinema with 3D Dolby Vision projection and Dolby Atmos sound.
+                p New standard and first class seats are now available as well.
 
-        .picture-wrapper
-            .seat-column
-                .seat
-                    .seat-one
-                    p Standard Seats
+                .picture-wrapper
+                    .seat-column
+                        .seat
+                            .seat-one
+                            p Standard Seats
 
-                .seat
-                    .seat-two
-                    p First Class Seats
+                        .seat
+                            .seat-two
+                            p First Class Seats
 
-    #prices
-        .parallax
-            p.wp-heading Prices
+            article#prices
+                .parallax
+                    p.wp-heading Prices
 
-            .card-wrapper
-                .card-group-one
-                    .card
-                        p.card-heading Standard Adult (STA)
-                        hr
-                        p Monday & Tuesday - All Day: $15.00
+                    .card-wrapper
+                        .card-group-one
+                            .card
+                                p.card-heading Standard Adult (STA)
+                                hr
+                                p Monday & Tuesday - All Day: $15.00
+                                p Wednesday, Thursday & Friday - 12PM: $15.00
+                                p Wednesday, Thursday & Friday - After 12PM: $20.50
+                                p Saturday & Sunday - All Day: $20.50
 
-                .card-group-two
+                            .card
+                                p.card-heading Standard Concession (STP)
+                                hr
+                                p Monday & Tuesday - All Day: $13.00
+                                p Wednesday, Thursday & Friday - 12PM: $13.00
+                                p Wednesday, Thursday & Friday - After 12PM: $18.00
+                                p Saturday & Sunday - All Day: $18.00
+
+                            .card
+                                p.card-heading Standard Child (STC)
+                                hr
+                                p Monday & Tuesday - All Day: $11.00
+                                p Wednesday, Thursday & Friday - 12PM: $11.00
+                                p Wednesday, Thursday & Friday - After 12PM: $15.50
+                                p Saturday & Sunday - All Day: $15.50
+
+                        .card-group-two
+                            .card
+                                p.card-heading First Class Adult (FCA)
+                                hr
+                                p Monday & Tuesday - All Day: $25.00
+                                p Wednesday, Thursday & Friday - 12PM: $25.00
+                                p Wednesday, Thursday & Friday - After 12PM: $30.00
+                                p Saturday & Sunday - All Day: $30.00
+
+                            .card
+                                p.card-heading First Class Concession (FCP)
+                                hr
+                                p Monday & Tuesday - All Day: $23.00
+                                p Wednesday, Thursday & Friday - 12PM: $23.00
+                                p Wednesday, Thursday & Friday - After 12PM: $27.50
+                                p Saturday & Sunday - All Day: $27.50
+
+                            .card
+                                p.card-heading First Class Child (FCC)
+                                hr
+                                p Monday & Tuesday - All Day: $21.00
+                                p Wednesday, Thursday & Friday - 12PM: $21.00
+                                p Wednesday, Thursday & Friday - After 12PM: $25.00
+                                p Saturday & Sunday - All Day: $25.00
+
+            article#now-showing
+                p.wp-heading Now Showing
+                p Click the panels below to view its synopsis.
+
+                .panel-group
+                    .panel
+                        .movie(data-movie-id="star-wars")
+                            .left
+                                .sw-poster
+                            p.title Star Wars: The Rise of Skywalker (M)
+                            .schedule
+                                p Monday - 12PM
+                                p Tuesday - 12PM
+                                p Wednesday - 6PM
+                                p Thursday - 6PM
+                                p Friday - 6PM
+                                p Saturday - 9PM
+                                p Sunday - 9PM
+
+                    .panel
+                        .movie(data-movie-id="frozen-2")
+                            .left
+                                .f2-poster
+                            p.title Frozen 2 (PG)
+                            .schedule
+                                p Wednesday - 9PM
+                                p Thursday - 9PM
+                                p Friday - 9PM
+                                p Saturday - 6PM
+                                p Sunday - 6PM
+
+                .panel-group
+                    .panel
+                        .movie(data-movie-id="the-queens-corgi")
+                            .left
+                                .tqc-poster
+                            p.title The Queen's Corgi (PG)
+                            .schedule
+                                p Monday - 6PM
+                                p Tuesday - 6PM
+                                p Saturday - 3PM
+                                p Sunday - 3PM
+
+                    .panel
+                        .movie(data-movie-id="koko")
+                            .left
+                                .koko-poster
+                            p.title Koko: A Red Dog Story (PG)
+                            .schedule
+                                p Wednesday - 12PM
+                                p Thursday - 12PM
+                                p Friday - 12PM
+                                p Saturday - 9PM
+                                p Sunday - 9PM
+
+            .synopsis
+                #star-wars.details
+                    p.movie-title Star Wars: The Rise of Skywalker (M)
+                    .trailer
+                        p.movie-desc The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.
+                        iframe(width="560", height="315", src="")
+                        p Monday - 12PM
+                        p Tuesday - 12PM
+                        p Wednesday - 6PM
+                        p Thursday - 6PM
+                        p Friday - 6PM
+                        p Saturday - 9PM
+                        p Sunday - 9PM
+
+            .synopsis
+                #frozen-2.details
+                    p.movie-title Frozen 2 (PG)
+                    .trailer
+                        p.movie-desc Having harnessed her ever-growing power after lifting the dreadful curse of the eternal winter in Frozen (2013), the beautiful conjurer of snow and ice, Queen Elsa, now rules the peaceful kingdom of Arendelle, enjoying a happy life with her sister, Princess Anna. However, a melodious voice that only Elsa can hear keeps her awake, inviting her to the mystical enchanted forest that the sisters' father told them a long time ago. Now, unable to block the thrilling call of the secret siren, Elsa - along with Anna, Kristoff, Olaf, and Sven - summon up the courage to follow the voice into the unknown, intent on finding answers in the perpetually misty realm in the woods. More and more, an inexplicable imbalance is hurting not only her kingdom but also the neighbouring tribe of Northuldra. Can Queen Elsa put her legendary magical skills to good use to restore peace and stability?
+                        iframe(width="560", height="315", src="https://www.youtube.com/embed/bwzLiQZDw2I", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                        p Wednesday - 9PM
+                        p Thursday - 9PM
+                        p Friday - 9PM
+                        p Saturday - 6PM
+                        p Sunday - 6PM
+
+            .synopsis
+                #the-queens-corgi.details
+                    p.movie-title The Queen's Corgi (PG)
+                    .trailer
+                        p.movie-desc Rex, one of the Queen's most beloved corgis, escapes from the palace and immediately finds himself lost, with only a group of scrappy dogs to rely on. Forced to find his way back to his favorite Monarch, Rex begins an epic journey that will help him discover who he truly is.
+                        iframe(width="560", height="315", src="https://www.youtube.com/embed/Q_YVjq737jY", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                        p Monday - 6PM
+                        p Tuesday - 6PM
+                        p Saturday - 3PM
+                        p Sunday - 3PM
+
+            .synopsis
+                #koko.details
+                    p.movie-title Koko: A Red Dog Story (PG)
+                    .trailer
+                        p.movie-desc A thoroughly entertaining behind-the-scenes re-telling of the 2011 Australian film "Red Dog", and the canine behind the titular role, Koko. Through interviews, old footage and re-enactments, "Koko: A Red Dog Story" illustrates a vivid picture of the beloved kelpie and the lives of everyone he touched.
+                        iframe(width="560", height="315", src="https://www.youtube.com/embed/IRuC-gkCNJY", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+                        p Wednesday - 12PM
+                        p Thursday - 12PM
+                        p Friday - 12PM
+                        p Saturday - 9PM
+                        p Sunday - 9PM
+
+        footer
+            .footer-information
+                p.footer-info 123-456 Princess Street
+                p.footer-info Ringward VIC 1234
+                p.footer-info +03 1234 5678
+                p.footer-info hello@lunardo-cinemas.com
+
+            .footer-data
+                div Copyright &copy; 2020 - #{new Date().getFullYear()} Cate - S3806544
+
+        script(src="/script.js")
