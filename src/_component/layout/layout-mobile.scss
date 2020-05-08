@@ -5,6 +5,7 @@ body {
   font-family: "Montserrat";
   background-color: $colour-woodsmoke;
   color: white;
+  scroll-behavior: smooth;
 }
 
 h3 {
@@ -20,6 +21,7 @@ p {
   line-height: 2.3rem;
   margin: auto;
   width: 75%;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -222,7 +224,6 @@ hr {
   background-color: $colour-mineshaft;
   overflow: hidden;
   z-index: 9999;
-  padding: 1rem;
 
   a {
     font-family: "League Spartan";
@@ -231,38 +232,174 @@ hr {
     text-transform: uppercase;
     display: inline-block;
     margin: auto;
-    padding: 0.8rem;
+    padding: 2rem;
   }
 
+  a.current,
   a:hover {
     color: $colour-black;
     background-color: $colour-silver;
   }
-
-  a.current {
-    color: $colour-black;
-    background-color: $colour-silver;
-  }
 }
-
-// .sticky {
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-
-//   + {
-//     .content {
-//       padding-top: 3.75rem;
-//     }
-//   }
-// }
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+
+  + {
+    .content {
+      padding-top: 3.75rem;
+    }
+  }
 }
 
-.sticky + .content {
-  padding-top: 60px;
+// Footer
+.footer-information {
+  font-family: "League Spartan";
+  background-color: $colour-mineshaft;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  width: 100%;
+}
+
+.footer-info {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.footer-data {
+  color: $colour-grey-chateau;
+  text-align: center;
+  padding: 0.5rem;
+
+  div {
+    line-height: 1.5rem;
+    display: inline-block;
+    padding: 1rem;
+  }
+}
+
+// Slideshow
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: $colour-concrete;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide-number {
+  color: $colour-concrete;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.circles {
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: $colour-lighter-silver;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: $colour-dove-grey;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-pic-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(asset/image/cinema-slide.jpg);
+  background-size: cover;
+  height: 10rem;
+  width: 100%;
+}
+
+.slide-pic-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(asset/image/frozen-2-slide.jpg);
+  background-size: cover;
+  height: 10rem;
+  width: 100%;
+}
+
+.slide-pic-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url(asset/image/star-wars-slide.jpg);
+  background-size: cover;
+  height: 10rem;
+  width: 100%;
+}
+
+.wp-heading {
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.picture-wrapper {
+  text-align: center;
+}
+
+.seat {
+  height: 16rem;
+  width: 20rem;
+}
+
+.caption {
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
 }

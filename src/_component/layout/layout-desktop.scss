@@ -80,10 +80,41 @@
   }
 
   #navbar {
-    padding: 0;
-
     a {
       font-size: 0.5rem;
+      padding: 0.8rem;
     }
+  }
+
+  .footer-information {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .footer-info {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .footer-data {
+    font-size: 0.5rem;
+    padding: 0.1rem;
+  }
+
+  .picture-wrapper {
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+
+  .seat-column {
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seat {
+    height: 7rem;
+    width: 9rem;
   }
 }

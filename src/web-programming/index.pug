@@ -11,20 +11,20 @@ block content
                 a(href="#now-showing") Now Showing
 
         .slideshow-container
-            .fade
+            .mySlides.fade
                 .slide-number 1 / 3
-                    .slide-1
-                    p.text We have renovated!
+                .slide-pic-1
+                .text We have renovated!
 
-            .fade
+            .mySlides.fade
                 .slide-number 2 / 3
-                    .slide-2
-                    p.text In cinemas August 9
+                .slide-pic-2
+                .text In cinemas August 9
 
-            .fade
+            .mySlides.fade
                 .slide-number 3 / 3
-                    .slide-3
-                    p.text In cinemas November 22
+                .slide-pic-3
+                .text In cinemas November 22
 
         .circles
             span.dot(onClick="currentSlide(1)")
@@ -40,13 +40,12 @@ block content
 
                 .picture-wrapper
                     .seat-column
-                        .seat
-                            .seat-one
-                            p Standard Seats
+                        img(src="../../asset/image/standard-seats.png", class="seat")
+                        p.caption Standard Seats
 
-                        .seat
-                            .seat-two
-                            p First Class Seats
+                    .seat-column
+                        img(src="../../asset/image/first-class-seats.png", class="seat")
+                        p.caption First Class Seats
 
             article#prices
                 .parallax
@@ -163,7 +162,7 @@ block content
                     p.movie-title Star Wars: The Rise of Skywalker (M)
                     .trailer
                         p.movie-desc The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.
-                        iframe(width="560", height="315", src="")
+                        iframe(width="560" height="315" src="https://www.youtube-nocookie.com/embed/d90nqf1JK64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
                         p Monday - 12PM
                         p Tuesday - 12PM
                         p Wednesday - 6PM
@@ -206,15 +205,17 @@ block content
                         p Friday - 12PM
                         p Saturday - 9PM
                         p Sunday - 9PM
+            br
 
         footer
             .footer-information
-                p.footer-info 123-456 Princess Street
-                p.footer-info Ringward VIC 1234
-                p.footer-info +03 1234 5678
-                p.footer-info hello@lunardo-cinemas.com
+                .footer-info 123 Princess Street
+                .footer-info Ringward VIC 1234
+                .footer-info +03 1234 5678
+                .footer-info hello@lunardo-cinemas.com
 
             .footer-data
                 div Copyright &copy; 2020 - #{new Date().getFullYear()} Cate - S3806544
 
-        script(src="/script.js")
+        script
+            include script.js
