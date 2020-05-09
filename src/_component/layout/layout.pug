@@ -3,8 +3,7 @@ html
   head
     title RMIT Projects
     - var baseUrl = taskTarget === 'tmp' ? '' : '/RMIT-Projects'
-    link(rel="stylesheet", href="/style.css")
-    //- link(rel="stylesheet", href=`${baseUrl}style.css`)
+    link(rel="stylesheet", href=`${baseUrl}/style.css`)
   body
     include ../menu/menu
     block content
