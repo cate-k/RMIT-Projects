@@ -219,6 +219,13 @@ hr {
   margin: auto;
 }
 
+.wp-heading {
+  font-family: "League Spartan";
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 4rem;
+}
+
 #navbar {
   text-align: center;
   background-color: $colour-mineshaft;
@@ -380,14 +387,7 @@ hr {
   width: 100%;
 }
 
-.wp-heading {
-  font-family: "League Spartan";
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
+// About Us
 .picture-wrapper {
   text-align: center;
 }
@@ -403,3 +403,42 @@ hr {
   text-align: center;
   display: block;
 }
+
+// Prices
+.parallax {
+  background-image: url(asset/image/3d-dolby-vision.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 35rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  border: 3px solid $colour-gold;
+  background-color: $colour-darker-mineshaft;
+  border-radius: 5px;
+  height: 14.5rem;
+  width: 19rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    font-size: 0.7rem;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.card-heading {
+  font-family: "League Spartan";
+  color: $colour-gold;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+// Now Showing

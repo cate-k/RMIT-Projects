@@ -79,6 +79,10 @@
     width: 15%;
   }
 
+  .wp-heading {
+    padding-top: 2rem;
+  }
+
   #navbar {
     a {
       font-size: 0.5rem;
@@ -86,6 +90,7 @@
     }
   }
 
+  // Footer
   .footer-information {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -101,6 +106,7 @@
     padding: 0.1rem;
   }
 
+  // About Us
   .picture-wrapper {
     display: flex;
     width: 50%;
@@ -117,4 +123,26 @@
     height: 7rem;
     width: 9rem;
   }
+
+  // Prices
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 8rem;
+    width: 13rem;
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+
+  .card-group-two {
+    margin-left: 1rem;
+  }
+
+  // Now Showing
 }
