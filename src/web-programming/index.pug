@@ -104,13 +104,13 @@ block content
 
             article#now-showing
                 p.wp-heading Now Showing
-                p Click the panels below to view its synopsis.
+                p.guide Click a panel below to view its synopsis.
 
                 .panel-group
                     .panel
                         .movie(data-movie-id="star-wars")
                             .left
-                                .sw-poster
+                                img(src="../../asset/image/star-wars-poster.jpg", height=355, width=240, class="poster", alt="Star Wars: TROS poster")
                             p.title Star Wars: The Rise of Skywalker (M)
                             .schedule
                                 p Monday - 12PM
@@ -124,7 +124,7 @@ block content
                     .panel
                         .movie(data-movie-id="frozen-2")
                             .left
-                                .f2-poster
+                                img(src="../../asset/image/frozen-2-poster.jpg", height=355, width=240, class="poster", alt="Frozen 2 poster")
                             p.title Frozen 2 (PG)
                             .schedule
                                 p Wednesday - 9PM
@@ -137,7 +137,7 @@ block content
                     .panel
                         .movie(data-movie-id="the-queens-corgi")
                             .left
-                                .tqc-poster
+                                img(src="../../asset/image/the-queens-corgi-poster.jpg", height=355, width=240, class="poster", alt="The Queen's Corgi poster")
                             p.title The Queen's Corgi (PG)
                             .schedule
                                 p Monday - 6PM
@@ -148,10 +148,10 @@ block content
                     .panel
                         .movie(data-movie-id="koko")
                             .left
-                                .koko-poster
+                                img(src="../../asset/image/koko-red-dog-poster.jpg", height=355, width=240, class="poster", alt="Koko: A Red Dog Story poster")
                             p.title Koko: A Red Dog Story (PG)
                             .schedule
-                                p Wednesday - 12PM
+                                p Wednesday - 6PM
                                 p Thursday - 12PM
                                 p Friday - 12PM
                                 p Saturday - 9PM
@@ -163,25 +163,27 @@ block content
                     .trailer
                         p.movie-desc The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end.
                         iframe(width="560" height="315" src="https://www.youtube-nocookie.com/embed/d90nqf1JK64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="")
-                        p Monday - 12PM
-                        p Tuesday - 12PM
-                        p Wednesday - 6PM
-                        p Thursday - 6PM
-                        p Friday - 6PM
-                        p Saturday - 9PM
-                        p Sunday - 9PM
+                    .showing-times
+                        p.times Monday - 12PM
+                        p.times Tuesday - 12PM
+                        p.times Wednesday - 6PM
+                        p.times Thursday - 6PM
+                        p.times Friday - 6PM
+                        p.times Saturday - 9PM
+                        p.times Sunday - 9PM
 
             .synopsis
                 #frozen-2.details
                     p.movie-title Frozen 2 (PG)
                     .trailer
-                        p.movie-desc Having harnessed her ever-growing power after lifting the dreadful curse of the eternal winter in Frozen (2013), the beautiful conjurer of snow and ice, Queen Elsa, now rules the peaceful kingdom of Arendelle, enjoying a happy life with her sister, Princess Anna. However, a melodious voice that only Elsa can hear keeps her awake, inviting her to the mystical enchanted forest that the sisters' father told them a long time ago. Now, unable to block the thrilling call of the secret siren, Elsa - along with Anna, Kristoff, Olaf, and Sven - summon up the courage to follow the voice into the unknown, intent on finding answers in the perpetually misty realm in the woods. More and more, an inexplicable imbalance is hurting not only her kingdom but also the neighbouring tribe of Northuldra. Can Queen Elsa put her legendary magical skills to good use to restore peace and stability?
+                        p.movie-desc Set three years after the events of the first film (Frozen - 2013) , the story follows Elsa, Anna, Kristoff, Olaf, and Sven, who embark on a journey beyond their kingdom of Arendelle in order to discover the origin of Elsa's magical powers and save their kingdom after a mysterious voice calls out to Elsa.
                         iframe(width="560", height="315", src="https://www.youtube.com/embed/bwzLiQZDw2I", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
-                        p Wednesday - 9PM
-                        p Thursday - 9PM
-                        p Friday - 9PM
-                        p Saturday - 6PM
-                        p Sunday - 6PM
+                    .showing-times
+                        p.times Wednesday - 9PM
+                        p.times Thursday - 9PM
+                        p.times Friday - 9PM
+                        p.times Saturday - 6PM
+                        p.times Sunday - 6PM
 
             .synopsis
                 #the-queens-corgi.details
@@ -189,10 +191,11 @@ block content
                     .trailer
                         p.movie-desc Rex, one of the Queen's most beloved corgis, escapes from the palace and immediately finds himself lost, with only a group of scrappy dogs to rely on. Forced to find his way back to his favorite Monarch, Rex begins an epic journey that will help him discover who he truly is.
                         iframe(width="560", height="315", src="https://www.youtube.com/embed/Q_YVjq737jY", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
-                        p Monday - 6PM
-                        p Tuesday - 6PM
-                        p Saturday - 3PM
-                        p Sunday - 3PM
+                    .showing-times
+                        p.times Monday - 6PM
+                        p.times Tuesday - 6PM
+                        p.times Saturday - 3PM
+                        p.times Sunday - 3PM
 
             .synopsis
                 #koko.details
@@ -200,12 +203,15 @@ block content
                     .trailer
                         p.movie-desc A thoroughly entertaining behind-the-scenes re-telling of the 2011 Australian film "Red Dog", and the canine behind the titular role, Koko. Through interviews, old footage and re-enactments, "Koko: A Red Dog Story" illustrates a vivid picture of the beloved kelpie and the lives of everyone he touched.
                         iframe(width="560", height="315", src="https://www.youtube.com/embed/IRuC-gkCNJY", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
-                        p Wednesday - 12PM
-                        p Thursday - 12PM
-                        p Friday - 12PM
-                        p Saturday - 9PM
-                        p Sunday - 9PM
+                    .showing-times
+                        p.times Wednesday - 6PM
+                        p.times Thursday - 12PM
+                        p.times Friday - 12PM
+                        p.times Saturday - 9PM
+                        p.times Sunday - 9PM
             br
+        
+        p.assignment-link #[a(href="https://titan.csit.rmit.edu.au/~s3806544/wp/") Original Assignment Link]
 
         footer
             .footer-information

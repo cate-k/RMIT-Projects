@@ -416,6 +416,13 @@ hr {
   overflow: hidden;
 }
 
+.card-heading {
+  font-family: "League Spartan";
+  color: $colour-gold;
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
 .card {
   border: 3px solid $colour-gold;
   background-color: $colour-darker-mineshaft;
@@ -434,11 +441,114 @@ hr {
   }
 }
 
-.card-heading {
+// Now Showing
+.guide {
   font-family: "League Spartan";
-  color: $colour-gold;
-  font-size: 0.8rem;
-  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-// Now Showing
+.panel {
+  cursor: pointer;
+  border: 1px solid $colour-mineshaft;
+  border-radius: 15px;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.poster {
+  border-radius: 15px;
+  display: block;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-family: "League Spartan";
+  font-size: 1.2rem;
+  text-align: center;
+  color: $colour-gold;
+  margin-top: 1rem;
+}
+
+.schedule p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.synopsis {
+  height: 90%;
+  width: 80%;
+  margin: auto;
+}
+
+.movie-title {
+  color: $colour-gold;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0;
+}
+
+.movie-desc {
+  width: 80%;
+  padding: 1rem;
+}
+
+// Synopsis
+.synopsis {
+  height: 90%;
+  width: 80%;
+  margin: auto;
+}
+
+.movie-title {
+  color: $colour-gold;
+  font-family: "League Spartan";
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.movie-desc {
+  width: 80%;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.times {
+  font-family: "League Spartan";
+  color: $colour-gold;
+  background-color: $colour-mineshaft;
+  border-radius: 10px;
+  width: 50%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  display: none;
+}
+
+.details.selected {
+  display: block;
+  border: 1px solid $colour-mineshaft;
+  border-radius: 15px;
+}
+
+.assignment-link {
+  text-align: center;
+}

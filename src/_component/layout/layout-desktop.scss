@@ -131,12 +131,18 @@
     align-items: center;
   }
 
+  .card-heading {
+    font-size: 0.5rem;
+  }
+
   .card {
-    height: 8rem;
-    width: 13rem;
+    height: 6rem;
+    width: 10rem;
 
     p {
-      font-size: 0.5rem;
+      font-size: 0.4rem;
+      margin: 0.2rem;
+      line-height: 0.8rem;
     }
   }
 
@@ -145,4 +151,85 @@
   }
 
   // Now Showing
+  .guide {
+    font-size: 0.4rem;
+  }
+
+  .panel-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .panel {
+    cursor: pointer;
+    border: 1px solid $colour-mineshaft;
+    border-radius: 25px;
+    height: 7.5rem;
+    width: 30%;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .poster {
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  .title {
+    font-size: 0.5rem;
+    text-align: left;
+    margin-left: 48.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .schedule p {
+    font-size: 0.3rem;
+    text-align: left;
+    line-height: 0.7rem;
+    margin: 0;
+    margin-left: 6rem;
+  }
+
+  .left {
+    float: left;
+  }
+
+  // Synopsis
+  .synopsis {
+    width: 72%;
+  }
+
+  .movie-title {
+    font-size: 0.8rem;
+  }
+
+  .movie-desc {
+    line-height: 0.8rem;
+    width: 50%;
+  }
+
+  .trailer {
+    display: flex;
+  }
+
+  iframe {
+    flex: 50%;
+    margin: 1rem;
+  }
+
+  .showing-times {
+    display: flex;
+    justify-content: center;
+  }
+
+  .times {
+    font-size: 0.3rem;
+    width: 10%;
+    padding: 0.1rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0.3rem;
+  }
 }
